@@ -1,0 +1,64 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" verbose="1" parallel="false" thread-count="5"
+	preserve-order="true">
+
+
+	<!--..NOTE..: Add after complete After unenrollment all records add in following 
+		sheet https://docs.google.com/spreadsheets/d/1Ovo0UzJEmOu3cygZU7bKt5q-gC7Oy0Zo3kIWLDpxQ-8/edit#gid=0 
+		Also if CKYCA and/or CTMA user foud in sheet then these user add in https://docs.google.com/spreadsheets/d/11QDS-pdG7HCltFbQE11I1EU0bTm_lw6GTOEl9WmU8fA/edit#gid=1798150095 
+		this sheet -->
+
+
+	<!-- Declare Parameters as per Dev requried -->
+	<!-- <parameter name="url" value="https://ing.dev2.bizziq.com/admin/user.php" 
+		/> <parameter name="Login" value="sarabjeetdhillon" /> <parameter name="Password" 
+		value="Acams@123dev" /> -->
+
+	<!-- Declare Parameters as per ETPROD requried -->
+	<!-- <parameter name="url" value="https://ing.lms.etprod.com/admin/user.php" 
+		/> <parameter name="Login" value="sarabjeetdhillon" /> <parameter name="Password" 
+		value="Acams@123etprod" /> -->
+
+	<!-- Declare Parameters as per PROD requried UPDATED: aditi@elephantthink.com 
+		aditi@etprod.com -->
+<!--   
+	<parameter name="url"
+		value="https://ing.acams.bizziq.com/admin/user.php" />
+	<parameter name="Login" value="aditi@etprod.com" />
+	<parameter name="Password" value="Green#321" /> -->
+ 
+	 <parameter name="url" value="https://ing.dev2.bizziq.com/admin/user.php" 
+		/> <parameter name="Login" value="sarabjeetdhillon" /> <parameter name="Password" 
+		value="Acams@123dev" /> 
+
+	<!--<parameter name="Organization" value= "ING Bank"/> This below parameter 
+		use for only on Production -->
+	<!-- this two options are: ING Bank, Acams Pilot <parameter name="Organization" 
+		value= "ING Bank"> -->
+
+	<listeners> <!-- useDefaultListeners="false" -->
+		<listener class-name="org.testng.reporters.TestHTMLReporter" />
+		<listener class-name="org.testng.reporters.JUnitXMLReporter" />
+		<listener class-name="org.testng.reporters.XMLReporter" />
+		<listener class-name="Config_Folder.ERListenerImplement" />
+		<!-- <listener class-name="Config_Folder.ScreenShotOnFailure" /> -->
+	</listeners>
+
+	<packages>
+	    <package name="Acams_UserUnenrollment.utilities" /> 
+		<package name="Acams_UserUnenrollment.ProjectTestcases" />
+
+
+	</packages>
+
+	<test name="Courses in Acams Testing">
+		<classes>
+		     
+		  <class name="utilities.LaunchBrowserAdminLoginCourses" />
+		    
+			<class name="ProjectTestcases.AcamsCourses" />
+	
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

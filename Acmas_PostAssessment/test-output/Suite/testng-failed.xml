@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="url" value="https://ing.lms.etprod.com/login/index.php"/>
+  <listeners>
+    <listener class-name="org.testng.reporters.TestHTMLReporter"/>
+    <listener class-name="org.testng.reporters.JUnitXMLReporter"/>
+    <listener class-name="org.testng.reporters.XMLReporter"/>
+    <listener class-name="Config_Folder.ERListenerImplement"/>
+    <listener class-name="Config_Folder.ScreenShotOnFailure"/>
+  </listeners>
+  <packages>
+    <package name="Acmas_PostAssessment.ProjectTestcases"/>
+  </packages>
+  <test name="User Postassessment process">
+    <classes>
+      <class name="ProjectTestcases.SCF_UserPostAssessment"/>
+    </classes>
+  </test> <!-- User Postassessment process -->
+</suite> <!-- Failed suite [Suite] -->

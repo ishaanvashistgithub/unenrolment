@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="Login" value="sarabjeetdhillon"/>
+  <parameter name="url" value="https://ing.dev2.bizziq.com/admin/user.php"/>
+  <parameter name="Password" value="Acams@123dev"/>
+  <listeners>
+    <listener class-name="org.testng.reporters.TestHTMLReporter"/>
+    <listener class-name="org.testng.reporters.JUnitXMLReporter"/>
+    <listener class-name="org.testng.reporters.XMLReporter"/>
+    <listener class-name="Config_Folder.ERListenerImplement"/>
+  </listeners>
+  <packages>
+    <package name="Acams_UserUnenrollment.utilities"/>
+    <package name="Acams_UserUnenrollment.ProjectTestcases"/>
+  </packages>
+  <test thread-count="5" name="Courses in Acams Testing(failed)">
+    <classes>
+      <class name="ProjectTestcases.AcamsCourses">
+        <methods>
+          <include name="Clickontheuserss"/>
+          <include name="Clickontheusers"/>
+        </methods>
+      </class> <!-- ProjectTestcases.AcamsCourses -->
+    </classes>
+  </test> <!-- Courses in Acams Testing(failed) -->
+</suite> <!-- Failed suite [Suite] -->

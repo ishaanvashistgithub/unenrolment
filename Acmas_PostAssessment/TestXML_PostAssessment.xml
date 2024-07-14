@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false">
+
+	<!-- Declare Parameters as per Dev requried -->
+	<!-- <parameter name="url" value="https://ing.dev2.bizziq.com/login/index.php" 
+		/> -->
+
+	<!-- Declare Parameters as per ETPROD requried -->
+	 <parameter name="url" value="https://ing.lms.etprod.com/login/index.php" />  
+
+	<!-- Declare Parameters as per PROD requried -->
+	 <!--  <parameter name="url" value="https://ing.acams.bizziq.com/login/index.php"/>   -->
+
+	<listeners> <!-- useDefaultListeners="false" -->
+		<listener class-name="org.testng.reporters.TestHTMLReporter" />
+		<listener class-name="org.testng.reporters.JUnitXMLReporter" />
+		<listener class-name="org.testng.reporters.XMLReporter" />
+		<listener class-name="Config_Folder.ERListenerImplement" />
+		<listener class-name="Config_Folder.ScreenShotOnFailure" />
+	</listeners>
+
+	<packages>
+		<package name="Acmas_PostAssessment.ProjectTestcases" />
+	</packages>
+
+	<test name="User Postassessment process">
+		<classes>
+			<!-- <class name="ProjectTestcases.AML_UserPostAssessment" />-->
+			<class name="ProjectTestcases.SCF_UserPostAssessment" />
+			<!--<class name="ProjectTestcases.TMF_UserPostAssessment" /> 
+			<class name="ProjectTestcases.KYCF_UserPostAssessment" />
+			 <class name="ProjectTestcases.CKYCA_UserPostAssessment" /> 
+			<class name="ProjectTestcases.CKYCA2_UserPostAssessment" />
+			 <class name="ProjectTestcases.CTMA_UserPostAssessment" />
+			<class name="ProjectTestcases.CTMA2_UserPostAssessment" />
+			<class name="ProjectTestcases.KYC_F_AND_I_UserPostAssessment" />
+			<class name="ProjectTestcases.KYC_F_AND_I_2_UserPostAssessment" /> -->
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+ 
+ 

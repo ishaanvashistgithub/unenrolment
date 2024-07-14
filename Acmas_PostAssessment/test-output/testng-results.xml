@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="1613143" started-at="2022-10-27T11:49:25Z" finished-at="2022-10-27T12:16:18Z">
+    <groups>
+    </groups>
+    <test name="User Postassessment process" duration-ms="1613143" started-at="2022-10-27T11:49:25Z" finished-at="2022-10-27T12:16:18Z">
+      <class name="ProjectTestcases.SCF_UserPostAssessment">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:ProjectTestcases.SCF_UserPostAssessment@17f6480]" name="openBrowser" is-config="true" duration-ms="14405" started-at="2022-10-27T17:19:26Z" finished-at="2022-10-27T17:19:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://ing.lms.etprod.com/login/index.php]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="CourseSCF_PostAssessment(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ProjectTestcases.SCF_UserPostAssessment@17f6480]" name="CourseSCF_PostAssessment" duration-ms="322919" started-at="2022-10-27T17:19:40Z" description="Complete the Post the Assessment process" data-provider="PostAssessment" finished-at="2022-10-27T17:25:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tmf_pl_5new]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Acams@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[scf-en]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CourseSCF_PostAssessment -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:ProjectTestcases.SCF_UserPostAssessment@17f6480]" name="closebrowser" is-config="true" duration-ms="687" started-at="2022-10-27T17:25:03Z" finished-at="2022-10-27T17:25:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:ProjectTestcases.SCF_UserPostAssessment@17f6480]" name="openBrowser" is-config="true" duration-ms="13206" started-at="2022-10-27T17:25:04Z" finished-at="2022-10-27T17:25:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://ing.lms.etprod.com/login/index.php]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="CourseSCF_PostAssessment(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ProjectTestcases.SCF_UserPostAssessment@17f6480]" name="CourseSCF_PostAssessment" duration-ms="356504" started-at="2022-10-27T17:25:17Z" description="Complete the Post the Assessment process" data-provider="PostAssessment" finished-at="2022-10-27T17:31:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tmf_it_6new]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Acams@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[scf-en]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CourseSCF_PostAssessment -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:ProjectTestcases.SCF_UserPostAssessment@17f6480]" name="closebrowser" is-config="true" duration-ms="664" started-at="2022-10-27T17:31:14Z" finished-at="2022-10-27T17:31:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:ProjectTestcases.SCF_UserPostAssessment@17f6480]" name="openBrowser" is-config="true" duration-ms="23723" started-at="2022-10-27T17:31:14Z" finished-at="2022-10-27T17:31:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://ing.lms.etprod.com/login/index.php]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="CourseSCF_PostAssessment(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ProjectTestcases.SCF_UserPostAssessment@17f6480]" name="CourseSCF_PostAssessment" duration-ms="412330" started-at="2022-10-27T17:31:38Z" description="Complete the Post the Assessment process" data-provider="PostAssessment" finished-at="2022-10-27T17:38:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tmf_tr_7new]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Acams@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[scf-en]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CourseSCF_PostAssessment -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:ProjectTestcases.SCF_UserPostAssessment@17f6480]" name="closebrowser" is-config="true" duration-ms="738" started-at="2022-10-27T17:38:30Z" finished-at="2022-10-27T17:38:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:ProjectTestcases.SCF_UserPostAssessment@17f6480]" name="openBrowser" is-config="true" duration-ms="19435" started-at="2022-10-27T17:38:31Z" finished-at="2022-10-27T17:38:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://ing.lms.etprod.com/login/index.php]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="CourseSCF_PostAssessment(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ProjectTestcases.SCF_UserPostAssessment@17f6480]" name="CourseSCF_PostAssessment" duration-ms="446917" started-at="2022-10-27T17:38:51Z" description="Complete the Post the Assessment process" data-provider="PostAssessment" finished-at="2022-10-27T17:46:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tmf_fr_8new]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Acams@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[scf-en]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CourseSCF_PostAssessment -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:ProjectTestcases.SCF_UserPostAssessment@17f6480]" name="closebrowser" is-config="true" duration-ms="670" started-at="2022-10-27T17:46:18Z" finished-at="2022-10-27T17:46:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- ProjectTestcases.SCF_UserPostAssessment -->
+    </test> <!-- User Postassessment process -->
+  </suite> <!-- Suite -->
+</testng-results>
